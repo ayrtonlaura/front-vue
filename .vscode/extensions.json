@@ -1,0 +1,7 @@
+{
+  "recommendations": [
+    "Vue.volar",
+    "humao.rest-client",
+    "dbaeumer.vscode-eslint"
+  ]
+}

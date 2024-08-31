@@ -1,0 +1,15 @@
+:root {
+  --tooltip-bg-color: #333;
+}
+.tippy-box {
+  background-color: var(--box-bg-color);
+}
+.tippy-box .tippy-arrow {
+  border-bottom-color: var(--tooltip-bg-color) !important;
+}
+.tippy-box .tippy-content {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 12px;
+  padding: 6px 10px;
+  line-height: 12px;
+}

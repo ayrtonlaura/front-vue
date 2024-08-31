@@ -1,0 +1,164 @@
+.ag-theme-balham {
+  font-family: 'Source Sans Pro', sans-serif !important;
+  --ag-header-background-color: var(--v-appbar-base);
+  --ag-border-color: #e2e9f8;
+  --ag-row-border-color: #e2e9f8;
+}
+
+.ag-watermark {
+  display: none !important;
+}
+
+.ag-theme-balham .ag-root-wrapper {
+  border-radius: 5px;
+}
+
+.ag-theme-balham .ag-row {
+  display: flex;
+  align-items: center;
+}
+
+.ag-theme-balham .ag-cell {
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  word-break: keep-all;
+}
+
+/* .ag-theme-balham .ag-row-hover {
+  background-color: var(--v-boton-base) !important;
+} */
+
+/* 
+.ag-header-cell-label {
+  word-break: keep-all;
+  word-wrap: break-word;
+} */
+/* .ag-theme-balham .ag-header-cell-label .ag-header-cell-text {
+  height: auto;
+  overflow: visible;
+  overflow-wrap: normal;
+  text-overflow: clip;
+  white-space: normal;
+} */
+
+.ag-header-group-cell {
+  /* background-color: red; */
+  justify-content: center;
+}
+
+.ag-header-cell-text,
+.ag-header-group-text {
+  color: #707171;
+  font-size: 11px;
+  font-weight: normal;
+  margin: auto;
+}
+
+.cell-editable,
+.ag-theme-balham .ag-cell.ag-cell-inline-editing {
+  background-image: url('../img/edit-pen.svg');
+  background-position-x: calc(100% - 4px);
+  background-position-y: center;
+  background-repeat: no-repeat;
+  background-size: 12px;
+}
+
+.cell-error {
+  background-color: red !important;
+  color: white !important;
+}
+
+.cell-editable {
+  padding-right: 23px !important;
+}
+
+/*
+.cell-seguimiento-0 {
+  background-color: rgba(0, 128, 0, 0.05);
+}
+.cell-seguimiento-1 {
+  background-color: rgba(0, 128, 0, 0.07);
+}
+.cell-seguimiento-2 {
+  background-color: rgba(0, 128, 0, 0.09);
+}
+.cell-seguimiento-3 {
+  background-color: rgba(0, 128, 0, 0.11);
+}
+*/
+
+.cell-texto {
+  /* background-color: red !important; */
+  /* text-overflow: ellipsis; */
+  /* display: inline-block; */
+
+  display: block !important;
+  text-overflow: ellipsis !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+
+  /* justify-content: start; */
+}
+
+.cell-cantidad {
+  justify-content: center;
+  /* text-align: center; */
+}
+
+.cell-precio {
+  justify-content: end;
+}
+
+.cell-cantidad-minus,
+.cell-precio-minus {
+  color: red;
+}
+
+.cell-cantidad-zero,
+.cell-precio-zero {
+  color: #bbb !important;
+  /* color: #00f !important; */
+}
+
+/*
+.cell-bloqueado {
+  background-color: rgba(73, 115, 255, 0.1) !important;
+  background-image: url('../img/lock.svg');
+  background-position-x: calc(100% - 4px);
+  background-position-y: center;
+  background-repeat: no-repeat;
+  background-size: 12px;
+  color: #222 !important;
+  padding-right: 25px !important;
+}
+
+.cell-importado {
+  background-color: rgba(73, 115, 255, 0.1) !important;
+  background-image: url('../img/importado.svg');
+  --background-position-x: calc(100% - 5px);
+  background-position-x: 5px;
+  background-position-y: calc(50% - 2px);
+  background-repeat: no-repeat;
+  background-size: 10px;
+  color: #222 !important;
+  padding-left: 25px !important;
+}
+
+.row-ag-promocion {
+  background-color: #fffc42 !important;
+}
+
+.row-ag-liquidacion {
+  background-color: rgba(114, 242, 155, 0.6) !important;
+}
+.row-ag-sin-precio {
+  background-color: #ffe2e2 !important;
+  color: #990000 !important;
+}
+*/
+
+.cell-codigo {
+  font-size: 11px !important;
+  justify-content: center;
+}

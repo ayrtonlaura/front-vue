@@ -1,0 +1,96 @@
+{
+  "Crear span.text-h6": {
+    "scope": "jade",
+    "prefix": "h6",
+    "body": [
+      "span.text-h6 ",
+    ],
+    "description": "Crear un v-container"
+  },
+  "Crear v-container": {
+    "scope": "jade",
+    "prefix": "cont",
+    "body": [
+      "v-container",
+      "\tv-row(dense)",
+      "\t\tv-col",
+      "\t\t\t"
+    ],
+    "description": "Crear un v-container"
+  },
+  "Crear v-row": {
+    "scope": "jade",
+    "prefix": "row",
+    "body": [
+      "v-row(dense)",
+      "\tv-col",
+      "\t\t"
+    ],
+    "description": "Crear un v-row"
+  },
+  "Crear v-col": {
+    "scope": "jade",
+    "prefix": "col",
+    "body": [
+      "v-col",
+      "\t"
+    ],
+    "description": "Crear un v-col"
+  },
+  "Componente Vue": {
+    "scope": "vue",
+    "prefix": "vue",
+    "description": "Crear nuevo modulo",
+    "body": [
+      "<script>",
+      "export default { name: '${1}' }",
+      "</script>",
+      "",
+      "<script setup>",
+      "// import { ref } from \"vue\"",
+      "",
+      "</script>",
+      "",
+      "<template lang=\"pug\">",
+      "div ✅ Component ${1}${2}",
+      "</template>"
+    ]
+  },
+  "agGrid": {
+    "scope": "jade",
+    "prefix": "agGrid",
+    "description": "Crear agGrid",
+    "body": [
+      "agGrid.noHeader(",
+      "\t:column-defs=\"columnDefs\"",
+      "\t:data=\"rowData\"",
+      "\t:filtro=\"filtro\"",
+      "\t:row-height=\"${1:25}\"",
+      "\tstyle=\"width: 100%; height: calc(100vh - ${2:200}px)\"",
+      "\t@grid-ready=\"readyGrid\"",
+      "\t)",
+      "",
+      "div.w250",
+      "\tv-filtro-input(v-model=\"filtro\" placeholder=\"Fitlrar...\")"
+    ]
+  },
+  "agGrid-script": {
+    "scope": "javascript",
+    "prefix": "agGrid-script",
+    "body": [
+      "const gridApi = ref();",
+      "const columnDefs = ref([]);",
+      "const rowData = ref([]);",
+      "const filtro = ref(\"\");",
+      "const readyGrid = (params) => {",
+      "  gridApi.value = params.api;",
+      "};",
+      "",
+      "watch(filtro, async (newValue) => {",
+      "  gridApi.value.setGridOption(\"quickFilterText\", newValue);",
+      "  gridApi.value.redrawRows();",
+      "});",
+      ""
+    ]
+  }
+}

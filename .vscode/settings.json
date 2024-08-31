@@ -1,0 +1,112 @@
+{
+    "git.autofetch": true,
+    "editor.tabSize": 2,
+    "editor.formatOnSave": true,
+    "editor.insertSpaces": true,
+    "editor.cursorSmoothCaretAnimation": "on",
+    "editor.cursorBlinking": "expand",
+    "editor.showFoldingControls": "always",
+    "editor.folding": true,
+    "editor.foldingStrategy": "auto",
+    "editor.stickyScroll.enabled": false,
+    "notebook.showFoldingControls": "always",
+    "breadcrumbs.enabled": false,
+    "files.exclude": {
+        "public": true,
+        "**/.gitignore": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "apps/api/test": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true,
+        "**/.turbo": true,
+        "instaladores iis node": true,
+        "**/node_modules": true,
+        "**/dist": true,
+        "**/package-lock.json": true,
+        ".browserslistrc": true,
+        ".editorconfig": true,
+        "index.html": true,
+        "typed-router.d.ts": true,
+        "components.d.ts": true,
+        "jsconfig.json": true,
+        ".prettierrc.js": true,
+        ".eslintrc.js": true,
+        "README.md": true,
+        "vite.config.mjs": true
+    },
+    "better-comments.multilineComments": true,
+    "better-comments.tags": [
+        {
+            "tag": "->",
+            "color": "#00FF00",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            "tag": "!",
+            "color": "#FF2D00",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            "tag": "?",
+            "color": "#3498DB",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            "tag": "//",
+            "color": "#474747",
+            "strikethrough": true,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            "tag": "todo",
+            "color": "#FF8C00",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            "tag": "*",
+            "color": "#98C379",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            "tag": "+",
+            "color": "#00FF00",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        }
+    ],
+    "maptz.regionfolder": {
+        "[vue]": {
+            "foldStart": "//#region [NAME]", //Text inserted at the start of the fold.
+            "foldEnd": "//#endregion", //Text inserted at the end of the fold
+            "disableFolding": false //Turn off #region folding for this language
+        }
+    }
+}

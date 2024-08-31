@@ -1,0 +1,13 @@
+.Vue-Toastification__toast-body {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 12px !important;
+}
+
+.Vue-Toastification__toast {
+  align-items: center !important;
+  display: flex !important;
+  justify-content: space-between !important;
+  min-height: unset !important;
+  min-width: 230px !important;
+  padding: 10px !important;
+}
